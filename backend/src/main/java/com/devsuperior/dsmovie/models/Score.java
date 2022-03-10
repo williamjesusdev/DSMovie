@@ -9,7 +9,7 @@ import javax.persistence.Table;
 public class Score {
 
     @EmbeddedId
-    private ScoreID id;
+    private ScoreID id = new ScoreID();
     private Double value;
 
     public void setMovie(Movie movie) {

@@ -17,12 +17,12 @@ public class MovieController {
     private MovieService movieService;
 
     @GetMapping
-    public Page<MovieDTO> getAll (Pageable pageable){
+    public Page<MovieDTO> getAll(Pageable pageable) {
         return movieService.findAll(pageable);
     }
 
     @GetMapping("/{id}")
-    public MovieDTO getById (@PathVariable Long id){
+    public MovieDTO getById(@PathVariable Long id) {
         return movieService.findById(id);
     }
 }
