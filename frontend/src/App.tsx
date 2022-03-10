@@ -5,7 +5,7 @@ import Navbar from "components/Navbar";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/DSMovie">
       <Navbar />
       <Routes>
         <Route path="/" element={<Listing />} />
