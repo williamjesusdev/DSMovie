@@ -12,6 +12,7 @@
     "deploy": "gh-pages -d build -r https://github.com/williamjesusdev/DSMovie -f"
   },
   "dependencies": {
+    "axios": "0.24.0",
     "bootstrap": "^5.1.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
