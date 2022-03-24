@@ -1,2 +1,4 @@
 export const BASE_URL =
-  process.env.REACT_APP_BACKEND_URL ?? "http://localhost:8080";
+  process.env.REACT_APP_LOCALE === "PROD"
+    ? process.env.REACT_APP_PROD_API
+    : "http://localhost:8080";
