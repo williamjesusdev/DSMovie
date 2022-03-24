@@ -31,8 +31,11 @@ public class ScoreService {
 
     @Transactional
     public MovieDTO save(ScoreDTO scoreDTO) {
-        User user = usersRepository.findByEmail(scoreDTO.getEmail())
-                .orElse(usersRepository.saveAndFlush(new User(scoreDTO.getEmail())));
+        User user = usersRepository.findByEmail(scoreDTO.getEmail()).orElse(new User());
+
+        if(user.getId() == null) {
+            user = usersRepository.save(new User(scoreDTO.getEmail()));
+        }
 
         Movie movie = moviesRepository.findById(scoreDTO.getMovieID())
                 .orElseThrow(() -> new RuntimeException("Movie not found with ID " + scoreDTO.getMovieID()));
