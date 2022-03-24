@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/DSMovie/static/css/main.f9e1afa0.css",
+    "main.js": "/DSMovie/static/js/main.720dac33.js",
+    "static/media/github.svg": "/DSMovie/static/media/github.a92b4ab2e9d59dfebb97c928b8b84c94.svg",
+    "index.html": "/DSMovie/index.html",
+    "static/media/star_empty.svg": "/DSMovie/static/media/star_empty.6e6ce0dcbb23a24cde111ff503161abb.svg",
+    "static/media/star_half.svg": "/DSMovie/static/media/star_half.2ea1b7982bd5e682ddf7049cc9cac32b.svg",
+    "static/media/star_full.svg": "/DSMovie/static/media/star_full.df7ce3ea494989e86dea00ca93332db6.svg",
+    "static/media/arrow.svg": "/DSMovie/static/media/arrow.e376b70c4cdfdb462a7354609c84d7f4.svg",
+    "main.f9e1afa0.css.map": "/DSMovie/static/css/main.f9e1afa0.css.map",
+    "main.720dac33.js.map": "/DSMovie/static/js/main.720dac33.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9e1afa0.css",
+    "static/js/main.720dac33.js"
+  ]
+}
