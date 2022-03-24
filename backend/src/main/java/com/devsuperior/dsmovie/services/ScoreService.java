@@ -44,6 +44,8 @@ public class ScoreService {
 
         scoreRepository.saveAndFlush(s);
 
+        movie = moviesRepository.findById(scoreDTO.getMovieID()).get();
+
         Double sum = movie.getScores().stream().reduce(0.0, (partial, score) -> partial + score.getValue(), Double::sum);
         Double avg = sum / movie.getScores().size();
         movie.setScore(avg);
